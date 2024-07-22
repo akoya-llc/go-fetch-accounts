@@ -1,0 +1,12 @@
+<html>
+	<h1>
+		{{ .title }}
+	</h1>
+	<body>
+	Paste the id_token you received from 'step-2-exchange-auth-code-for-token' and click the button below to get a list of accounts.
+	</body>
+	<form action="/api/received-accounts" method="POST">
+    <input type="text" id="token" name="token" placeholder="your id_token goes here" size="115"><br>
+    <input type="submit" value="Get account details">
+	</form>
+</html>
